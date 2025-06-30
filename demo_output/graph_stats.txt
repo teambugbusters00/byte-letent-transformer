@@ -1,0 +1,17 @@
+Graph Statistics:
+Number of nodes: 681
+Number of edges: 2391
+Graph density: 0.0103
+Average clustering coefficient: 0.6262
+
+Top 10 most connected tokens:
+   : 680 connections, entropy: 0.877
+  and: 125 connections, entropy: 0.000
+  the: 103 connections, entropy: 0.000
+  “: 78 connections, entropy: 0.912
+  to: 73 connections, entropy: 0.000
+  ”: 69 connections, entropy: 0.000
+  of: 66 connections, entropy: 0.000
+  i: 53 connections, entropy: 0.000
+  a: 52 connections, entropy: 0.000
+  you: 49 connections, entropy: 0.176

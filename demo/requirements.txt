@@ -1,0 +1,5 @@
+requests>=2.25.1
+rich>=10.0.0
+networkx>=2.6.3
+matplotlib>=3.4.3
+pyvis>=0.2.1

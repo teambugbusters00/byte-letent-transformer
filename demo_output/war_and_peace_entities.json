@@ -1,0 +1,596 @@
+[
+  {
+    "text": "the united states",
+    "type": "GPE",
+    "start": 94,
+    "end": 111
+  },
+  {
+    "text": "the united states",
+    "type": "GPE",
+    "start": 354,
+    "end": 371
+  },
+  {
+    "text": "leo tolstoy",
+    "type": "ORG",
+    "start": 497,
+    "end": 508
+  },
+  {
+    "text": "april 1 2001",
+    "type": "DATE",
+    "start": 559,
+    "end": 571
+  },
+  {
+    "text": "2600",
+    "type": "CARDINAL",
+    "start": 578,
+    "end": 582
+  },
+  {
+    "text": "june 14 2022",
+    "type": "DATE",
+    "start": 605,
+    "end": 617
+  },
+  {
+    "text": "english",
+    "type": "NORP",
+    "start": 627,
+    "end": 634
+  },
+  {
+    "text": "david",
+    "type": "PERSON",
+    "start": 670,
+    "end": 675
+  },
+  {
+    "text": "leo",
+    "type": "ORG",
+    "start": 751,
+    "end": 754
+  },
+  {
+    "text": "one",
+    "type": "CARDINAL",
+    "start": 784,
+    "end": 787
+  },
+  {
+    "text": "chapter i chapter ii",
+    "type": "LAW",
+    "start": 793,
+    "end": 813
+  },
+  {
+    "text": "chapter v chapter vi chapter vii chapter",
+    "type": "LAW",
+    "start": 837,
+    "end": 877
+  },
+  {
+    "text": "chapter xiv chapter",
+    "type": "PRODUCT",
+    "start": 940,
+    "end": 959
+  },
+  {
+    "text": "chapter xxvii chapter",
+    "type": "ORG",
+    "start": 1102,
+    "end": 1123
+  },
+  {
+    "text": "two",
+    "type": "CARDINAL",
+    "start": 1136,
+    "end": 1139
+  },
+  {
+    "text": "chapter i chapter ii",
+    "type": "LAW",
+    "start": 1145,
+    "end": 1165
+  },
+  {
+    "text": "chapter v chapter vi chapter vii chapter",
+    "type": "LAW",
+    "start": 1189,
+    "end": 1229
+  },
+  {
+    "text": "chapter xiv chapter",
+    "type": "PRODUCT",
+    "start": 1292,
+    "end": 1311
+  },
+  {
+    "text": "three",
+    "type": "CARDINAL",
+    "start": 1394,
+    "end": 1399
+  },
+  {
+    "text": "chapter i chapter ii",
+    "type": "LAW",
+    "start": 1405,
+    "end": 1425
+  },
+  {
+    "text": "chapter v chapter vi chapter vii chapter",
+    "type": "LAW",
+    "start": 1449,
+    "end": 1489
+  },
+  {
+    "text": "chapter xiv chapter",
+    "type": "PRODUCT",
+    "start": 1552,
+    "end": 1571
+  },
+  {
+    "text": "four",
+    "type": "CARDINAL",
+    "start": 1631,
+    "end": 1635
+  },
+  {
+    "text": "chapter i chapter ii",
+    "type": "LAW",
+    "start": 1641,
+    "end": 1661
+  },
+  {
+    "text": "chapter v chapter vi chapter vii chapter",
+    "type": "LAW",
+    "start": 1685,
+    "end": 1725
+  },
+  {
+    "text": "chapter xiv chapter",
+    "type": "PRODUCT",
+    "start": 1788,
+    "end": 1807
+  },
+  {
+    "text": "five",
+    "type": "CARDINAL",
+    "start": 1828,
+    "end": 1832
+  },
+  {
+    "text": "chapter i chapter ii",
+    "type": "LAW",
+    "start": 1841,
+    "end": 1861
+  },
+  {
+    "text": "chapter v chapter vi chapter vii chapter",
+    "type": "LAW",
+    "start": 1885,
+    "end": 1925
+  },
+  {
+    "text": "chapter xiv chapter",
+    "type": "PRODUCT",
+    "start": 1988,
+    "end": 2007
+  },
+  {
+    "text": "six",
+    "type": "CARDINAL",
+    "start": 2103,
+    "end": 2106
+  },
+  {
+    "text": "1808",
+    "type": "DATE",
+    "start": 2107,
+    "end": 2111
+  },
+  {
+    "text": "chapter i chapter ii",
+    "type": "LAW",
+    "start": 2115,
+    "end": 2135
+  },
+  {
+    "text": "chapter v chapter vi chapter vii chapter",
+    "type": "LAW",
+    "start": 2159,
+    "end": 2199
+  },
+  {
+    "text": "chapter xiv chapter",
+    "type": "PRODUCT",
+    "start": 2262,
+    "end": 2281
+  },
+  {
+    "text": "seven",
+    "type": "CARDINAL",
+    "start": 2429,
+    "end": 2434
+  },
+  {
+    "text": "1810 11 chapter",
+    "type": "QUANTITY",
+    "start": 2435,
+    "end": 2450
+  },
+  {
+    "text": "chapter v chapter vi chapter vii chapter",
+    "type": "LAW",
+    "start": 2487,
+    "end": 2527
+  },
+  {
+    "text": "eight",
+    "type": "CARDINAL",
+    "start": 2595,
+    "end": 2600
+  },
+  {
+    "text": "1811 12 chapter",
+    "type": "QUANTITY",
+    "start": 2601,
+    "end": 2616
+  },
+  {
+    "text": "chapter v chapter vi chapter vii chapter",
+    "type": "LAW",
+    "start": 2653,
+    "end": 2693
+  },
+  {
+    "text": "chapter xiv chapter",
+    "type": "PRODUCT",
+    "start": 2756,
+    "end": 2775
+  },
+  {
+    "text": "nine 1812 chapter i chapter ii",
+    "type": "TIME",
+    "start": 2871,
+    "end": 2901
+  },
+  {
+    "text": "chapter v chapter vi chapter vii chapter",
+    "type": "LAW",
+    "start": 2925,
+    "end": 2965
+  },
+  {
+    "text": "chapter xiv chapter",
+    "type": "PRODUCT",
+    "start": 3028,
+    "end": 3047
+  },
+  {
+    "text": "ten",
+    "type": "CARDINAL",
+    "start": 3157,
+    "end": 3160
+  },
+  {
+    "text": "chapter i chapter ii",
+    "type": "LAW",
+    "start": 3166,
+    "end": 3186
+  },
+  {
+    "text": "chapter v chapter vi chapter vii chapter",
+    "type": "LAW",
+    "start": 3210,
+    "end": 3250
+  },
+  {
+    "text": "chapter xiv chapter",
+    "type": "PRODUCT",
+    "start": 3313,
+    "end": 3332
+  },
+  {
+    "text": "chapter xxvii",
+    "type": "ORG",
+    "start": 3475,
+    "end": 3488
+  },
+  {
+    "text": "chapter xxix chapter",
+    "type": "LAW",
+    "start": 3504,
+    "end": 3524
+  },
+  {
+    "text": "chapter xxxii",
+    "type": "LAW",
+    "start": 3542,
+    "end": 3555
+  },
+  {
+    "text": "chapter xxxiv",
+    "type": "PERSON",
+    "start": 3571,
+    "end": 3584
+  },
+  {
+    "text": "eleven",
+    "type": "CARDINAL",
+    "start": 3662,
+    "end": 3668
+  },
+  {
+    "text": "chapter i chapter ii",
+    "type": "LAW",
+    "start": 3674,
+    "end": 3694
+  },
+  {
+    "text": "chapter v chapter vi chapter vii chapter",
+    "type": "LAW",
+    "start": 3718,
+    "end": 3758
+  },
+  {
+    "text": "chapter xiv chapter",
+    "type": "PRODUCT",
+    "start": 3821,
+    "end": 3840
+  },
+  {
+    "text": "chapter xxvii",
+    "type": "ORG",
+    "start": 3983,
+    "end": 3996
+  },
+  {
+    "text": "chapter xxix chapter",
+    "type": "LAW",
+    "start": 4012,
+    "end": 4032
+  },
+  {
+    "text": "chapter xxxii",
+    "type": "LAW",
+    "start": 4050,
+    "end": 4063
+  },
+  {
+    "text": "chapter xxxiv",
+    "type": "PERSON",
+    "start": 4079,
+    "end": 4092
+  },
+  {
+    "text": "twelve",
+    "type": "CARDINAL",
+    "start": 4098,
+    "end": 4104
+  },
+  {
+    "text": "chapter i chapter ii",
+    "type": "LAW",
+    "start": 4110,
+    "end": 4130
+  },
+  {
+    "text": "chapter v chapter vi chapter vii chapter",
+    "type": "LAW",
+    "start": 4154,
+    "end": 4194
+  },
+  {
+    "text": "chapter xiv chapter",
+    "type": "PRODUCT",
+    "start": 4257,
+    "end": 4276
+  },
+  {
+    "text": "thirteen",
+    "type": "CARDINAL",
+    "start": 4297,
+    "end": 4305
+  },
+  {
+    "text": "chapter i chapter ii",
+    "type": "LAW",
+    "start": 4311,
+    "end": 4331
+  },
+  {
+    "text": "chapter v chapter vi chapter vii chapter",
+    "type": "LAW",
+    "start": 4355,
+    "end": 4395
+  },
+  {
+    "text": "chapter xiv chapter",
+    "type": "PRODUCT",
+    "start": 4458,
+    "end": 4477
+  },
+  {
+    "text": "fourteen",
+    "type": "CARDINAL",
+    "start": 4537,
+    "end": 4545
+  },
+  {
+    "text": "chapter i chapter ii",
+    "type": "LAW",
+    "start": 4551,
+    "end": 4571
+  },
+  {
+    "text": "chapter v chapter vi chapter vii chapter",
+    "type": "LAW",
+    "start": 4595,
+    "end": 4635
+  },
+  {
+    "text": "chapter xiv chapter",
+    "type": "PRODUCT",
+    "start": 4698,
+    "end": 4717
+  },
+  {
+    "text": "fifteen",
+    "type": "CARDINAL",
+    "start": 4777,
+    "end": 4784
+  },
+  {
+    "text": "chapter i chapter ii",
+    "type": "LAW",
+    "start": 4793,
+    "end": 4813
+  },
+  {
+    "text": "chapter v chapter vi chapter vii chapter",
+    "type": "LAW",
+    "start": 4837,
+    "end": 4877
+  },
+  {
+    "text": "chapter xiv chapter",
+    "type": "PRODUCT",
+    "start": 4940,
+    "end": 4959
+  },
+  {
+    "text": "1813",
+    "type": "DATE",
+    "start": 5040,
+    "end": 5044
+  },
+  {
+    "text": "chapter i chapter ii",
+    "type": "LAW",
+    "start": 5048,
+    "end": 5068
+  },
+  {
+    "text": "chapter v chapter vi chapter vii chapter",
+    "type": "LAW",
+    "start": 5092,
+    "end": 5132
+  },
+  {
+    "text": "chapter xiv chapter",
+    "type": "PRODUCT",
+    "start": 5195,
+    "end": 5214
+  },
+  {
+    "text": "second",
+    "type": "ORDINAL",
+    "start": 5230,
+    "end": 5236
+  },
+  {
+    "text": "chapter i chapter ii",
+    "type": "LAW",
+    "start": 5246,
+    "end": 5266
+  },
+  {
+    "text": "chapter v chapter vi chapter vii chapter",
+    "type": "LAW",
+    "start": 5290,
+    "end": 5330
+  },
+  {
+    "text": "one",
+    "type": "CARDINAL",
+    "start": 5385,
+    "end": 5388
+  },
+  {
+    "text": "july 1805",
+    "type": "DATE",
+    "start": 5870,
+    "end": 5879
+  },
+  {
+    "text": "first",
+    "type": "ORDINAL",
+    "start": 6091,
+    "end": 6096
+  },
+  {
+    "text": "some days",
+    "type": "DATE",
+    "start": 6158,
+    "end": 6167
+  },
+  {
+    "text": "la grippe",
+    "type": "ORG",
+    "start": 6203,
+    "end": 6212
+  },
+  {
+    "text": "french",
+    "type": "NORP",
+    "start": 6331,
+    "end": 6337
+  },
+  {
+    "text": "tonight",
+    "type": "TIME",
+    "start": 6577,
+    "end": 6584
+  },
+  {
+    "text": "10",
+    "type": "CARDINAL",
+    "start": 6599,
+    "end": 6601
+  },
+  {
+    "text": "french",
+    "type": "NORP",
+    "start": 6894,
+    "end": 6900
+  },
+  {
+    "text": "first",
+    "type": "ORDINAL",
+    "start": 7211,
+    "end": 7216
+  },
+  {
+    "text": "anna pávlovna",
+    "type": "PERSON",
+    "start": 7529,
+    "end": 7542
+  },
+  {
+    "text": "english",
+    "type": "NORP",
+    "start": 7607,
+    "end": 7614
+  },
+  {
+    "text": "today",
+    "type": "DATE",
+    "start": 7628,
+    "end": 7633
+  },
+  {
+    "text": "wednesday",
+    "type": "DATE",
+    "start": 7637,
+    "end": 7646
+  },
+  {
+    "text": "today",
+    "type": "DATE",
+    "start": 7757,
+    "end": 7762
+  }
+]

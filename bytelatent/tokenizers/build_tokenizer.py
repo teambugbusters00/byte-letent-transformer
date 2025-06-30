@@ -6,6 +6,7 @@ from pydantic import BaseModel
 
 from bytelatent.tokenizers.blt_tokenizer import BltTokenizer
 from bytelatent.tokenizers.tiktoken_tokenizer import TikTokenTokenizer
+from bytelatent.tokenizers.word_level_tokenizer import WordLevelTokenizer
 
 try:
     from sentencepiece import SentencePieceProcessor
@@ -56,11 +57,19 @@ class TokenizerArgs(BaseModel):
             return BltTokenizer(**init_kwargs)
         elif self.name == "mock":
             return MockTokenizer(**init_kwargs)
-        elif self.name == "sp":
-            assert has_sp, "sentencepiece not installed"
-            return SentencePieceTokenizer(**init_kwargs)
+        elif self.name == "sentencepiece":
+            if not has_sp:
+                raise ImportError(
+                    "sentencepiece not installed. Please install with `pip install sentencepiece`"
+                )
+            return SentencePieceTokenizer(**self.init_kwargs or {})
         elif self.name == "tiktoken":
-            assert has_tiktoken, "tiktoken not installed"
-            return TikTokenTokenizer(**init_kwargs)
+            if not has_tiktoken:
+                raise ImportError(
+                    "tiktoken not installed. Please install with `pip install tiktoken`"
+                )
+            return TikTokenTokenizer(**self.init_kwargs or {})
+        elif self.name == "wordlevel":
+            return WordLevelTokenizer(**self.init_kwargs or {})
         else:
             raise NotImplementedError(f"{self.name} tokenizer type is not implemented")

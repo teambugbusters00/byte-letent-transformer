@@ -1,0 +1,147 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "chunk",
+      "entity_type": "ORG",
+      "root": "inc",
+      "dep": "nsubj",
+      "id": "apple inc"
+    },
+    {
+      "type": "entity",
+      "entity_type": "NORP",
+      "id": "american"
+    },
+    {
+      "type": "entity",
+      "entity_type": "GPE",
+      "id": "california"
+    },
+    {
+      "type": "entity",
+      "entity_type": "PERSON",
+      "id": "steve jobs"
+    },
+    {
+      "type": "entity",
+      "entity_type": "PERSON",
+      "id": "steve wozniak"
+    },
+    {
+      "type": "chunk",
+      "entity_type": "PERSON",
+      "root": "wayne",
+      "dep": "conj",
+      "id": "ronald wayne"
+    },
+    {
+      "type": "entity",
+      "entity_type": "DATE",
+      "id": "1976"
+    },
+    {
+      "type": "entity",
+      "entity_type": "PERSON",
+      "id": "tim cook"
+    },
+    {
+      "type": "entity",
+      "entity_type": "CARDINAL",
+      "id": "147000"
+    },
+    {
+      "type": "entity",
+      "entity_type": "CARDINAL",
+      "id": "more than 25"
+    },
+    {
+      "type": "chunk",
+      "root": "company",
+      "dep": "attr",
+      "id": "an american multinational technology company"
+    },
+    {
+      "type": "chunk",
+      "root": "california",
+      "dep": "pobj",
+      "id": "cupertino california"
+    },
+    {
+      "type": "chunk",
+      "root": "it",
+      "dep": "nsubjpass",
+      "id": "it"
+    },
+    {
+      "type": "chunk",
+      "root": "wozniak",
+      "dep": "pobj",
+      "id": "steve jobs steve wozniak"
+    },
+    {
+      "type": "chunk",
+      "root": "apple",
+      "dep": "pobj",
+      "id": "1976 apple"
+    },
+    {
+      "type": "chunk",
+      "root": "products",
+      "dep": "pobj",
+      "id": "its innovative products"
+    },
+    {
+      "type": "chunk",
+      "root": "ipad",
+      "dep": "pobj",
+      "id": "the iphone ipad"
+    },
+    {
+      "type": "chunk",
+      "root": "computers",
+      "dep": "conj",
+      "id": "mac computers"
+    },
+    {
+      "type": "chunk",
+      "root": "ceo",
+      "dep": "pobj",
+      "id": "the company's ceo"
+    },
+    {
+      "type": "chunk",
+      "root": "apple",
+      "dep": "nsubj",
+      "id": "tim cook apple"
+    },
+    {
+      "type": "chunk",
+      "root": "employees",
+      "dep": "dobj",
+      "id": "over 147000 employees"
+    },
+    {
+      "type": "chunk",
+      "root": "countries",
+      "dep": "pobj",
+      "id": "more than 25 countries"
+    },
+    {
+      "id": "inc it apple"
+    },
+    {
+      "id": "california wozniak apple products ipad ceo employees countries"
+    }
+  ],
+  "links": [
+    {
+      "relation": "operate",
+      "sentence": "apple inc is an american multinational technology company headquartered in cupertino california it was founded by steve jobs steve wozniak and ronald wayne in 1976 apple is known for its innovative products like the iphone ipad and mac computers the company's ceo is tim cook apple has over 147000 employees and operates in more than 25 countries",
+      "source": "inc it apple",
+      "target": "california wozniak apple products ipad ceo employees countries"
+    }
+  ]
+}

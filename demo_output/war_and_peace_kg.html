@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 900px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+             #config {
+                 float: left;
+                 width: 400px;
+                 height: 600px;
+             }
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+            <div id="config"></div>
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#fcba03", "font": {"color": "black"}, "id": "the united states", "label": "the united states", "shape": "dot", "size": 10, "title": "the united states\nType: chunk\nEntity: GPE"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "leo tolstoy", "label": "leo tolstoy", "shape": "dot", "size": 10, "title": "leo tolstoy\nType: entity\nEntity: ORG"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "april 1 2001", "label": "april 1 2001", "shape": "dot", "size": 10, "title": "april 1 2001\nType: entity\nEntity: DATE"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "2600", "label": "2600", "shape": "dot", "size": 10, "title": "2600\nType: entity\nEntity: CARDINAL"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "june 14 2022", "label": "june 14 2022", "shape": "dot", "size": 10, "title": "june 14 2022\nType: entity\nEntity: DATE"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "english", "label": "english", "shape": "dot", "size": 10, "title": "english\nType: entity\nEntity: NORP"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "david", "label": "david", "shape": "dot", "size": 10, "title": "david\nType: entity\nEntity: PERSON"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "leo", "label": "leo", "shape": "dot", "size": 10, "title": "leo\nType: entity\nEntity: ORG"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "one", "label": "one", "shape": "dot", "size": 10, "title": "one\nType: chunk\nEntity: CARDINAL"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "chapter i chapter ii", "label": "chapter i chapter...", "shape": "dot", "size": 10, "title": "chapter i chapter ii\nType: entity\nEntity: LAW"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "chapter v chapter vi chapter vii chapter", "label": "chapter v chapter...", "shape": "dot", "size": 10, "title": "chapter v chapter vi chapter vii chapter\nType: entity\nEntity: LAW"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "chapter xiv chapter", "label": "chapter xiv chapter", "shape": "dot", "size": 10, "title": "chapter xiv chapter\nType: entity\nEntity: PRODUCT"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "chapter xxvii chapter", "label": "chapter xxvii cha...", "shape": "dot", "size": 10, "title": "chapter xxvii chapter\nType: entity\nEntity: ORG"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "two", "label": "two", "shape": "dot", "size": 10, "title": "two\nType: entity\nEntity: CARDINAL"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "three", "label": "three", "shape": "dot", "size": 10, "title": "three\nType: entity\nEntity: CARDINAL"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "four", "label": "four", "shape": "dot", "size": 10, "title": "four\nType: entity\nEntity: CARDINAL"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "five", "label": "five", "shape": "dot", "size": 10, "title": "five\nType: entity\nEntity: CARDINAL"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "six", "label": "six", "shape": "dot", "size": 10, "title": "six\nType: entity\nEntity: CARDINAL"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "1808", "label": "1808", "shape": "dot", "size": 10, "title": "1808\nType: entity\nEntity: DATE"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "seven", "label": "seven", "shape": "dot", "size": 10, "title": "seven\nType: entity\nEntity: CARDINAL"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "1810 11 chapter", "label": "1810 11 chapter", "shape": "dot", "size": 10, "title": "1810 11 chapter\nType: entity\nEntity: QUANTITY"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "eight", "label": "eight", "shape": "dot", "size": 10, "title": "eight\nType: entity\nEntity: CARDINAL"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "1811 12 chapter", "label": "1811 12 chapter", "shape": "dot", "size": 10, "title": "1811 12 chapter\nType: entity\nEntity: QUANTITY"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "nine 1812 chapter i chapter ii", "label": "nine 1812 chapter...", "shape": "dot", "size": 10, "title": "nine 1812 chapter i chapter ii\nType: entity\nEntity: TIME"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "ten", "label": "ten", "shape": "dot", "size": 10, "title": "ten\nType: entity\nEntity: CARDINAL"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "chapter xxvii", "label": "chapter xxvii", "shape": "dot", "size": 10, "title": "chapter xxvii\nType: entity\nEntity: ORG"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "chapter xxix chapter", "label": "chapter xxix chap...", "shape": "dot", "size": 10, "title": "chapter xxix chapter\nType: entity\nEntity: LAW"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "chapter xxxii", "label": "chapter xxxii", "shape": "dot", "size": 10, "title": "chapter xxxii\nType: entity\nEntity: LAW"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "chapter xxxiv", "label": "chapter xxxiv", "shape": "dot", "size": 10, "title": "chapter xxxiv\nType: entity\nEntity: PERSON"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "eleven", "label": "eleven", "shape": "dot", "size": 10, "title": "eleven\nType: entity\nEntity: CARDINAL"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "twelve", "label": "twelve", "shape": "dot", "size": 10, "title": "twelve\nType: entity\nEntity: CARDINAL"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "thirteen", "label": "thirteen", "shape": "dot", "size": 10, "title": "thirteen\nType: entity\nEntity: CARDINAL"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "fourteen", "label": "fourteen", "shape": "dot", "size": 10, "title": "fourteen\nType: entity\nEntity: CARDINAL"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "fifteen", "label": "fifteen", "shape": "dot", "size": 10, "title": "fifteen\nType: entity\nEntity: CARDINAL"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "1813", "label": "1813", "shape": "dot", "size": 10, "title": "1813\nType: entity\nEntity: DATE"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "second", "label": "second", "shape": "dot", "size": 10, "title": "second\nType: entity\nEntity: ORDINAL"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "july 1805", "label": "july 1805", "shape": "dot", "size": 10, "title": "july 1805\nType: entity\nEntity: DATE"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "first", "label": "first", "shape": "dot", "size": 10, "title": "first\nType: entity\nEntity: ORDINAL"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "some days", "label": "some days", "shape": "dot", "size": 10, "title": "some days\nType: chunk\nEntity: DATE"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "la grippe", "label": "la grippe", "shape": "dot", "size": 10, "title": "la grippe\nType: entity\nEntity: ORG"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "french", "label": "french", "shape": "dot", "size": 10, "title": "french\nType: chunk\nEntity: NORP"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "tonight", "label": "tonight", "shape": "dot", "size": 10, "title": "tonight\nType: entity\nEntity: TIME"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "10", "label": "10", "shape": "dot", "size": 10, "title": "10\nType: entity\nEntity: CARDINAL"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "anna p\u00e1vlovna", "label": "anna p\u00e1vlovna", "shape": "dot", "size": 10, "title": "anna p\u00e1vlovna\nType: chunk\nEntity: PERSON"}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "today", "label": "today", "shape": "dot", "size": 10, "title": "today\nType: entity\nEntity: DATE"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "wednesday", "label": "wednesday", "shape": "dot", "size": 10, "title": "wednesday\nType: chunk\nEntity: DATE"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "\ufeffthe project gutenberg ebook", "label": "\ufeffthe project gute...", "shape": "dot", "size": 10, "title": "\ufeffthe project gutenberg ebook\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "war", "label": "war", "shape": "dot", "size": 10, "title": "war\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "peace", "label": "peace", "shape": "dot", "size": 10, "title": "peace\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "the use", "label": "the use", "shape": "dot", "size": 10, "title": "the use\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "anyone", "label": "anyone", "shape": "dot", "size": 10, "title": "anyone\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "most other parts", "label": "most other parts", "shape": "dot", "size": 10, "title": "most other parts\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "the world", "label": "the world", "shape": "dot", "size": 10, "title": "the world\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "no cost", "label": "no cost", "shape": "dot", "size": 10, "title": "no cost\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "almost no restrictions", "label": "almost no restric...", "shape": "dot", "size": 10, "title": "almost no restrictions\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "you", "label": "you", "shape": "dot", "size": 10, "title": "you\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "it", "label": "it", "shape": "dot", "size": 10, "title": "it\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "the terms", "label": "the terms", "shape": "dot", "size": 10, "title": "the terms\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "the project gutenberg license", "label": "the project guten...", "shape": "dot", "size": 10, "title": "the project gutenberg license\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "this ebook", "label": "this ebook", "shape": "dot", "size": 10, "title": "this ebook\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "the laws", "label": "the laws", "shape": "dot", "size": 10, "title": "the laws\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "the country", "label": "the country", "shape": "dot", "size": 10, "title": "the country\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "this ebook title war", "label": "this ebook title ...", "shape": "dot", "size": 10, "title": "this ebook title war\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "peace author", "label": "peace author", "shape": "dot", "size": 10, "title": "peace author\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "leo tolstoy translator aylmer maude", "label": "leo tolstoy trans...", "shape": "dot", "size": 10, "title": "leo tolstoy translator aylmer maude\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "an anonymous volunteer and david widger start", "label": "an anonymous volu...", "shape": "dot", "size": 10, "title": "an anonymous volunteer and david widger start\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "the project gutenberg", "label": "the project guten...", "shape": "dot", "size": 10, "title": "the project gutenberg\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "peace war", "label": "peace war", "shape": "dot", "size": 10, "title": "peace war\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "leo tolstoytolstoi contents book", "label": "leo tolstoytolsto...", "shape": "dot", "size": 10, "title": "leo tolstoytolstoi contents book\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "chapter v chapter vi", "label": "chapter v chapter...", "shape": "dot", "size": 10, "title": "chapter v chapter vi\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "chapter ii chapter iii chapter iv", "label": "chapter ii chapte...", "shape": "dot", "size": 10, "title": "chapter ii chapter iii chapter iv\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "six 1808 10 chapter", "label": "six 1808 10 chapter", "shape": "dot", "size": 10, "title": "six 1808 10 chapter\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "chapter xxv chapter xxvi book seven 1810 11 chapter i chapter ii chapter iii chapter iv chapter v chapter vi chapter vii chapter viii chapter ix chapter x chapter xi chapter xii chapter xiii book", "label": "chapter xxv chapt...", "shape": "dot", "size": 10, "title": "chapter xxv chapter xxvi book seven 1810 11 chapter i chapter ii chapter iii chapter iv chapter v chapter vi chapter vii chapter viii chapter ix chapter x chapter xi chapter xii chapter xiii book\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "eight 1811 12 chapter", "label": "eight 1811 12 cha...", "shape": "dot", "size": 10, "title": "eight 1811 12 chapter\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "chapter xxvi chapter xxvii chapter xxviii chapter xxix chapter xxx chapter xxxi chapter xxxii chapter xxxiii chapter xxxiv book", "label": "chapter xxvi chap...", "shape": "dot", "size": 10, "title": "chapter xxvi chapter xxvii chapter xxviii chapter xxix chapter xxx chapter xxxi chapter xxxii chapter xxxiii chapter xxxiv book\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "1812 chapter i chapter ii chapter iii chapter iv chapter v chapter vi chapter vii chapter viii chapter", "label": "1812 chapter i ch...", "shape": "dot", "size": 10, "title": "1812 chapter i chapter ii chapter iii chapter iv chapter v chapter vi chapter vii chapter viii chapter\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "chapter xi chapter xii chapter xiii chapter xiv chapter xv chapter xvi book", "label": "chapter xi chapte...", "shape": "dot", "size": 10, "title": "chapter xi chapter xii chapter xiii chapter xiv chapter xv chapter xvi book\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "chapter", "label": "chapter", "shape": "dot", "size": 10, "title": "chapter\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "chapter vii chapter viii chapter", "label": "chapter vii chapt...", "shape": "dot", "size": 10, "title": "chapter vii chapter viii chapter\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "chapter xi chapter xii chapter xiii chapter xiv chapter xv chapter xvi chapter xvii chapter xviii chapter xix book", "label": "chapter xi chapte...", "shape": "dot", "size": 10, "title": "chapter xi chapter xii chapter xiii chapter xiv chapter xv chapter xvi chapter xvii chapter xviii chapter xix book\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "chapter xi chapter xii chapter xiii chapter xiv chapter xv chapter xvi chapter xvii chapter xviii chapter", "label": "chapter xi chapte...", "shape": "dot", "size": 10, "title": "chapter xi chapter xii chapter xiii chapter xiv chapter xv chapter xvi chapter xvii chapter xviii chapter\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "i chapter ii", "label": "i chapter ii", "shape": "dot", "size": 10, "title": "i chapter ii\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "chapter iii chapter iv", "label": "chapter iii chapt...", "shape": "dot", "size": 10, "title": "chapter iii chapter iv\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "second epilogue chapter", "label": "second epilogue c...", "shape": "dot", "size": 10, "title": "second epilogue chapter\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "1805 chapter", "label": "1805 chapter", "shape": "dot", "size": 10, "title": "1805 chapter\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "i", "label": "i", "shape": "dot", "size": 10, "title": "i\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "well prince", "label": "well prince", "shape": "dot", "size": 10, "title": "well prince\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "so genoa", "label": "so genoa", "shape": "dot", "size": 10, "title": "so genoa\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "lucca", "label": "lucca", "shape": "dot", "size": 10, "title": "lucca\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "just family estates", "label": "just family estates", "shape": "dot", "size": 10, "title": "just family estates\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "the buonapartes", "label": "the buonapartes", "shape": "dot", "size": 10, "title": "the buonapartes\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "me", "label": "me", "shape": "dot", "size": 10, "title": "me\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "this", "label": "this", "shape": "dot", "size": 10, "title": "this\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "the infamies", "label": "the infamies", "shape": "dot", "size": 10, "title": "the infamies\nType: chunk"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "ebook you it you you you", "label": "ebook you it you ...", "shape": "dot", "size": 12, "title": "ebook you it you you you\nType: node"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "war use anyone states world cost restrictions it it terms license ebook states laws country war maude 2600 gutenberg war book", "label": "war use anyone st...", "shape": "dot", "size": 12, "title": "war use anyone states world cost restrictions it it terms license ebook states laws country war maude 2600 gutenberg war book\nType: node"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "genoa i you this you i he i you you", "label": "genoa i you this ...", "shape": "dot", "size": 12, "title": "genoa i you this you i he i you you\nType: node"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "buonapartes you me war infamies antichrist nothing you yourself", "label": "buonapartes you m...", "shape": "dot", "size": 12, "title": "buonapartes you me war infamies antichrist nothing you yourself\nType: node"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "you i i it speaker sch\u00e9rer she who p\u00e1vlovna she she word you prospect i sch\u00e9rer he he grandfathers who he you he irony one one one you i fete i prince daughter me i fete i festivities", "label": "you i i it speake...", "shape": "dot", "size": 12, "title": "you i i it speaker sch\u00e9rer she who p\u00e1vlovna she she word you prospect i sch\u00e9rer he he grandfathers who he you he irony one one one you i fete i prince daughter me i fete i festivities\nType: node"}, {"color": "#fcba03", "font": {"color": "black"}, "id": "you news july honor f\u00ebdorovna words kur\u00e1gin man rank cough days grippe petersburg elite invitations exception french footman nothing count evening invalid you 7 prince least reception breeches stars breast face french which intonation man importance society court p\u00e1vlovna hand her head himself sofa friend me mind rest tone sympathy indifference times these feeling ambassador appearance me", "label": "you news july hon...", "shape": "dot", "size": 12, "title": "you news july honor f\u00ebdorovna words kur\u00e1gin man rank cough days grippe petersburg elite invitations exception french footman nothing count evening invalid you 7 prince least reception breeches stars breast face french which intonation man importance society court p\u00e1vlovna hand her head himself sofa friend me mind rest tone sympathy indifference times these feeling ambassador appearance me\nType: node"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#808080", "from": "ebook you it you you you", "label": "book", "title": "book", "to": "war use anyone states world cost restrictions it it terms license ebook states laws country war maude 2600 gutenberg war book", "width": 1.0}, {"arrows": "to", "color": "#808080", "from": "genoa i you this you i he i you you", "label": "call", "title": "call", "to": "buonapartes you me war infamies antichrist nothing you yourself", "width": 1.0}, {"arrows": "to", "color": "#808080", "from": "you i i it speaker sch\u00e9rer she who p\u00e1vlovna she she word you prospect i sch\u00e9rer he he grandfathers who he you he irony one one one you i fete i prince daughter me i fete i festivities", "label": "become", "title": "become", "to": "you news july honor f\u00ebdorovna words kur\u00e1gin man rank cough days grippe petersburg elite invitations exception french footman nothing count evening invalid you 7 prince least reception breeches stars breast face french which intonation man importance society court p\u00e1vlovna hand her head himself sofa friend me mind rest tone sympathy indifference times these feeling ambassador appearance me", "width": 1.0}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+                  // if this network requires displaying the configure window,
+                  // put it in its div
+                  options.configure["container"] = document.getElementById("config");
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

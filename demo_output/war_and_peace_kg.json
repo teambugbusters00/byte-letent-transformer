@@ -1,0 +1,1007 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "chunk",
+      "entity_type": "GPE",
+      "root": "states",
+      "dep": "pobj",
+      "id": "the united states"
+    },
+    {
+      "type": "entity",
+      "entity_type": "ORG",
+      "id": "leo tolstoy"
+    },
+    {
+      "type": "entity",
+      "entity_type": "DATE",
+      "id": "april 1 2001"
+    },
+    {
+      "type": "entity",
+      "entity_type": "CARDINAL",
+      "id": "2600"
+    },
+    {
+      "type": "entity",
+      "entity_type": "DATE",
+      "id": "june 14 2022"
+    },
+    {
+      "type": "entity",
+      "entity_type": "NORP",
+      "id": "english"
+    },
+    {
+      "type": "entity",
+      "entity_type": "PERSON",
+      "id": "david"
+    },
+    {
+      "type": "entity",
+      "entity_type": "ORG",
+      "id": "leo"
+    },
+    {
+      "type": "chunk",
+      "entity_type": "CARDINAL",
+      "root": "one",
+      "dep": "nsubj",
+      "id": "one"
+    },
+    {
+      "type": "entity",
+      "entity_type": "LAW",
+      "id": "chapter i chapter ii"
+    },
+    {
+      "type": "entity",
+      "entity_type": "LAW",
+      "id": "chapter v chapter vi chapter vii chapter"
+    },
+    {
+      "type": "entity",
+      "entity_type": "PRODUCT",
+      "id": "chapter xiv chapter"
+    },
+    {
+      "type": "entity",
+      "entity_type": "ORG",
+      "id": "chapter xxvii chapter"
+    },
+    {
+      "type": "entity",
+      "entity_type": "CARDINAL",
+      "id": "two"
+    },
+    {
+      "type": "entity",
+      "entity_type": "CARDINAL",
+      "id": "three"
+    },
+    {
+      "type": "entity",
+      "entity_type": "CARDINAL",
+      "id": "four"
+    },
+    {
+      "type": "entity",
+      "entity_type": "CARDINAL",
+      "id": "five"
+    },
+    {
+      "type": "entity",
+      "entity_type": "CARDINAL",
+      "id": "six"
+    },
+    {
+      "type": "entity",
+      "entity_type": "DATE",
+      "id": "1808"
+    },
+    {
+      "type": "entity",
+      "entity_type": "CARDINAL",
+      "id": "seven"
+    },
+    {
+      "type": "entity",
+      "entity_type": "QUANTITY",
+      "id": "1810 11 chapter"
+    },
+    {
+      "type": "entity",
+      "entity_type": "CARDINAL",
+      "id": "eight"
+    },
+    {
+      "type": "entity",
+      "entity_type": "QUANTITY",
+      "id": "1811 12 chapter"
+    },
+    {
+      "type": "entity",
+      "entity_type": "TIME",
+      "id": "nine 1812 chapter i chapter ii"
+    },
+    {
+      "type": "entity",
+      "entity_type": "CARDINAL",
+      "id": "ten"
+    },
+    {
+      "type": "entity",
+      "entity_type": "ORG",
+      "id": "chapter xxvii"
+    },
+    {
+      "type": "entity",
+      "entity_type": "LAW",
+      "id": "chapter xxix chapter"
+    },
+    {
+      "type": "entity",
+      "entity_type": "LAW",
+      "id": "chapter xxxii"
+    },
+    {
+      "type": "entity",
+      "entity_type": "PERSON",
+      "id": "chapter xxxiv"
+    },
+    {
+      "type": "entity",
+      "entity_type": "CARDINAL",
+      "id": "eleven"
+    },
+    {
+      "type": "entity",
+      "entity_type": "CARDINAL",
+      "id": "twelve"
+    },
+    {
+      "type": "entity",
+      "entity_type": "CARDINAL",
+      "id": "thirteen"
+    },
+    {
+      "type": "entity",
+      "entity_type": "CARDINAL",
+      "id": "fourteen"
+    },
+    {
+      "type": "entity",
+      "entity_type": "CARDINAL",
+      "id": "fifteen"
+    },
+    {
+      "type": "entity",
+      "entity_type": "DATE",
+      "id": "1813"
+    },
+    {
+      "type": "entity",
+      "entity_type": "ORDINAL",
+      "id": "second"
+    },
+    {
+      "type": "entity",
+      "entity_type": "DATE",
+      "id": "july 1805"
+    },
+    {
+      "type": "entity",
+      "entity_type": "ORDINAL",
+      "id": "first"
+    },
+    {
+      "type": "chunk",
+      "entity_type": "DATE",
+      "root": "days",
+      "dep": "pobj",
+      "id": "some days"
+    },
+    {
+      "type": "entity",
+      "entity_type": "ORG",
+      "id": "la grippe"
+    },
+    {
+      "type": "chunk",
+      "entity_type": "NORP",
+      "root": "french",
+      "dep": "pobj",
+      "id": "french"
+    },
+    {
+      "type": "entity",
+      "entity_type": "TIME",
+      "id": "tonight"
+    },
+    {
+      "type": "entity",
+      "entity_type": "CARDINAL",
+      "id": "10"
+    },
+    {
+      "type": "chunk",
+      "entity_type": "PERSON",
+      "root": "p\u00e1vlovna",
+      "dep": "pobj",
+      "id": "anna p\u00e1vlovna"
+    },
+    {
+      "type": "entity",
+      "entity_type": "DATE",
+      "id": "today"
+    },
+    {
+      "type": "chunk",
+      "entity_type": "DATE",
+      "root": "wednesday",
+      "dep": "attr",
+      "id": "wednesday"
+    },
+    {
+      "type": "chunk",
+      "root": "ebook",
+      "dep": "nsubj",
+      "id": "\ufeffthe project gutenberg ebook"
+    },
+    {
+      "type": "chunk",
+      "root": "war",
+      "dep": "dobj",
+      "id": "war"
+    },
+    {
+      "type": "chunk",
+      "root": "peace",
+      "dep": "conj",
+      "id": "peace"
+    },
+    {
+      "type": "chunk",
+      "root": "use",
+      "dep": "pobj",
+      "id": "the use"
+    },
+    {
+      "type": "chunk",
+      "root": "anyone",
+      "dep": "pobj",
+      "id": "anyone"
+    },
+    {
+      "type": "chunk",
+      "root": "parts",
+      "dep": "conj",
+      "id": "most other parts"
+    },
+    {
+      "type": "chunk",
+      "root": "world",
+      "dep": "pobj",
+      "id": "the world"
+    },
+    {
+      "type": "chunk",
+      "root": "cost",
+      "dep": "pobj",
+      "id": "no cost"
+    },
+    {
+      "type": "chunk",
+      "root": "restrictions",
+      "dep": "pobj",
+      "id": "almost no restrictions"
+    },
+    {
+      "type": "chunk",
+      "root": "you",
+      "dep": "nsubj",
+      "id": "you"
+    },
+    {
+      "type": "chunk",
+      "root": "it",
+      "dep": "nsubj",
+      "id": "it"
+    },
+    {
+      "type": "chunk",
+      "root": "terms",
+      "dep": "pobj",
+      "id": "the terms"
+    },
+    {
+      "type": "chunk",
+      "root": "license",
+      "dep": "pobj",
+      "id": "the project gutenberg license"
+    },
+    {
+      "type": "chunk",
+      "root": "ebook",
+      "dep": "pobj",
+      "id": "this ebook"
+    },
+    {
+      "type": "chunk",
+      "root": "laws",
+      "dep": "dobj",
+      "id": "the laws"
+    },
+    {
+      "type": "chunk",
+      "root": "country",
+      "dep": "pobj",
+      "id": "the country"
+    },
+    {
+      "type": "chunk",
+      "root": "war",
+      "dep": "dobj",
+      "id": "this ebook title war"
+    },
+    {
+      "type": "chunk",
+      "root": "author",
+      "dep": "conj",
+      "id": "peace author"
+    },
+    {
+      "type": "chunk",
+      "root": "maude",
+      "dep": "dobj",
+      "id": "leo tolstoy translator aylmer maude"
+    },
+    {
+      "type": "chunk",
+      "root": "start",
+      "dep": "appos",
+      "id": "an anonymous volunteer and david widger start"
+    },
+    {
+      "type": "chunk",
+      "root": "gutenberg",
+      "dep": "pobj",
+      "id": "the project gutenberg"
+    },
+    {
+      "type": "chunk",
+      "root": "war",
+      "dep": "conj",
+      "id": "peace war"
+    },
+    {
+      "type": "chunk",
+      "root": "book",
+      "dep": "pobj",
+      "id": "leo tolstoytolstoi contents book"
+    },
+    {
+      "type": "chunk",
+      "root": "vi",
+      "dep": "appos",
+      "id": "chapter v chapter vi"
+    },
+    {
+      "type": "chunk",
+      "root": "iv",
+      "dep": "appos",
+      "id": "chapter ii chapter iii chapter iv"
+    },
+    {
+      "type": "chunk",
+      "root": "chapter",
+      "dep": "appos",
+      "id": "six 1808 10 chapter"
+    },
+    {
+      "type": "chunk",
+      "root": "book",
+      "dep": "attr",
+      "id": "chapter xxv chapter xxvi book seven 1810 11 chapter i chapter ii chapter iii chapter iv chapter v chapter vi chapter vii chapter viii chapter ix chapter x chapter xi chapter xii chapter xiii book"
+    },
+    {
+      "type": "chunk",
+      "root": "chapter",
+      "dep": "appos",
+      "id": "eight 1811 12 chapter"
+    },
+    {
+      "type": "chunk",
+      "root": "book",
+      "dep": "ROOT",
+      "id": "chapter xxvi chapter xxvii chapter xxviii chapter xxix chapter xxx chapter xxxi chapter xxxii chapter xxxiii chapter xxxiv book"
+    },
+    {
+      "type": "chunk",
+      "root": "chapter",
+      "dep": "appos",
+      "id": "1812 chapter i chapter ii chapter iii chapter iv chapter v chapter vi chapter vii chapter viii chapter"
+    },
+    {
+      "type": "chunk",
+      "root": "book",
+      "dep": "appos",
+      "id": "chapter xi chapter xii chapter xiii chapter xiv chapter xv chapter xvi book"
+    },
+    {
+      "type": "chunk",
+      "root": "chapter",
+      "dep": "ROOT",
+      "id": "chapter"
+    },
+    {
+      "type": "chunk",
+      "root": "chapter",
+      "dep": "appos",
+      "id": "chapter vii chapter viii chapter"
+    },
+    {
+      "type": "chunk",
+      "root": "book",
+      "dep": "appos",
+      "id": "chapter xi chapter xii chapter xiii chapter xiv chapter xv chapter xvi chapter xvii chapter xviii chapter xix book"
+    },
+    {
+      "type": "chunk",
+      "root": "chapter",
+      "dep": "appos",
+      "id": "chapter xi chapter xii chapter xiii chapter xiv chapter xv chapter xvi chapter xvii chapter xviii chapter"
+    },
+    {
+      "type": "chunk",
+      "root": "ii",
+      "dep": "appos",
+      "id": "i chapter ii"
+    },
+    {
+      "type": "chunk",
+      "root": "iv",
+      "dep": "appos",
+      "id": "chapter iii chapter iv"
+    },
+    {
+      "type": "chunk",
+      "root": "chapter",
+      "dep": "appos",
+      "id": "second epilogue chapter"
+    },
+    {
+      "type": "chunk",
+      "root": "chapter",
+      "dep": "appos",
+      "id": "1805 chapter"
+    },
+    {
+      "type": "chunk",
+      "root": "i",
+      "dep": "nsubj",
+      "id": "i"
+    },
+    {
+      "type": "chunk",
+      "root": "prince",
+      "dep": "appos",
+      "id": "well prince"
+    },
+    {
+      "type": "chunk",
+      "root": "genoa",
+      "dep": "nsubj",
+      "id": "so genoa"
+    },
+    {
+      "type": "chunk",
+      "root": "lucca",
+      "dep": "conj",
+      "id": "lucca"
+    },
+    {
+      "type": "chunk",
+      "root": "estates",
+      "dep": "attr",
+      "id": "just family estates"
+    },
+    {
+      "type": "chunk",
+      "root": "buonapartes",
+      "dep": "pobj",
+      "id": "the buonapartes"
+    },
+    {
+      "type": "chunk",
+      "root": "me",
+      "dep": "dobj",
+      "id": "me"
+    },
+    {
+      "type": "chunk",
+      "root": "this",
+      "dep": "nsubj",
+      "id": "this"
+    },
+    {
+      "type": "chunk",
+      "root": "infamies",
+      "dep": "dobj",
+      "id": "the infamies"
+    },
+    {
+      "type": "chunk",
+      "root": "horrors",
+      "dep": "conj",
+      "id": "horrors"
+    },
+    {
+      "type": "chunk",
+      "root": "antichrist",
+      "dep": "pobj",
+      "id": "that antichrist"
+    },
+    {
+      "type": "chunk",
+      "root": "he",
+      "dep": "nsubj",
+      "id": "he"
+    },
+    {
+      "type": "chunk",
+      "root": "antichrist",
+      "dep": "attr",
+      "id": "antichrist"
+    },
+    {
+      "type": "chunk",
+      "root": "nothing",
+      "dep": "dobj",
+      "id": "nothing"
+    },
+    {
+      "type": "chunk",
+      "root": "friend",
+      "dep": "attr",
+      "id": "my friend"
+    },
+    {
+      "type": "chunk",
+      "root": "slave",
+      "dep": "attr",
+      "id": "my \u2018faithful slave"
+    },
+    {
+      "type": "chunk",
+      "root": "yourself",
+      "dep": "dobj",
+      "id": "yourself"
+    },
+    {
+      "type": "chunk",
+      "root": "news",
+      "dep": "dobj",
+      "id": "all the news"
+    },
+    {
+      "type": "chunk",
+      "root": "july",
+      "dep": "pobj",
+      "id": "july"
+    },
+    {
+      "type": "chunk",
+      "root": "speaker",
+      "dep": "nsubj",
+      "id": "the speaker"
+    },
+    {
+      "type": "chunk",
+      "root": "sch\u00e9rer",
+      "dep": "nsubj",
+      "id": "the wellknown anna p\u00e1vlovna sch\u00e9rer"
+    },
+    {
+      "type": "chunk",
+      "root": "honor",
+      "dep": "pobj",
+      "id": "honor"
+    },
+    {
+      "type": "chunk",
+      "root": "f\u00ebdorovna",
+      "dep": "pobj",
+      "id": "the empress m\u00e1rya f\u00ebdorovna"
+    },
+    {
+      "type": "chunk",
+      "root": "words",
+      "dep": "pobj",
+      "id": "these words"
+    },
+    {
+      "type": "chunk",
+      "root": "she",
+      "dep": "nsubj",
+      "id": "she"
+    },
+    {
+      "type": "chunk",
+      "root": "kur\u00e1gin",
+      "dep": "dobj",
+      "id": "prince vas\u00edli kur\u00e1gin"
+    },
+    {
+      "type": "chunk",
+      "root": "man",
+      "dep": "pobj",
+      "id": "a man"
+    },
+    {
+      "type": "chunk",
+      "root": "rank",
+      "dep": "pobj",
+      "id": "high rank"
+    },
+    {
+      "type": "chunk",
+      "root": "importance",
+      "dep": "pobj",
+      "id": "importance"
+    },
+    {
+      "type": "chunk",
+      "root": "who",
+      "dep": "nsubj",
+      "id": "who"
+    },
+    {
+      "type": "chunk",
+      "root": "p\u00e1vlovna",
+      "dep": "nsubj",
+      "id": "her reception anna p\u00e1vlovna"
+    },
+    {
+      "type": "chunk",
+      "root": "cough",
+      "dep": "dobj",
+      "id": "a cough"
+    },
+    {
+      "type": "chunk",
+      "root": "grippe",
+      "dep": "pobj",
+      "id": "la grippe grippe"
+    },
+    {
+      "type": "chunk",
+      "root": "word",
+      "dep": "nsubj",
+      "id": "a new word"
+    },
+    {
+      "type": "chunk",
+      "root": "petersburg",
+      "dep": "pobj",
+      "id": "st petersburg"
+    },
+    {
+      "type": "chunk",
+      "root": "elite",
+      "dep": "pobj",
+      "id": "the elite"
+    },
+    {
+      "type": "chunk",
+      "root": "invitations",
+      "dep": "dobj",
+      "id": "all her invitations"
+    },
+    {
+      "type": "chunk",
+      "root": "exception",
+      "dep": "pobj",
+      "id": "exception"
+    },
+    {
+      "type": "chunk",
+      "root": "footman",
+      "dep": "pobj",
+      "id": "a scarletliveried footman"
+    },
+    {
+      "type": "chunk",
+      "root": "count",
+      "dep": "dobj",
+      "id": "count"
+    },
+    {
+      "type": "chunk",
+      "root": "prince",
+      "dep": "conj",
+      "id": "prince"
+    },
+    {
+      "type": "chunk",
+      "root": "prospect",
+      "dep": "nsubj",
+      "id": "the prospect"
+    },
+    {
+      "type": "chunk",
+      "root": "evening",
+      "dep": "dobj",
+      "id": "an evening"
+    },
+    {
+      "type": "chunk",
+      "root": "invalid",
+      "dep": "pobj",
+      "id": "a poor invalid"
+    },
+    {
+      "type": "chunk",
+      "root": "sch\u00e9rer",
+      "dep": "nsubj",
+      "id": "\u2014annette sch\u00e9rer"
+    },
+    {
+      "type": "chunk",
+      "root": "heavens",
+      "dep": "appos",
+      "id": "\u201cheavens"
+    },
+    {
+      "type": "chunk",
+      "root": "attack",
+      "dep": "appos",
+      "id": "what a virulent attack"
+    },
+    {
+      "type": "chunk",
+      "root": "prince",
+      "dep": "nsubj",
+      "id": "the prince"
+    },
+    {
+      "type": "chunk",
+      "root": "reception",
+      "dep": "pobj",
+      "id": "this reception"
+    },
+    {
+      "type": "chunk",
+      "root": "breeches",
+      "dep": "dobj",
+      "id": "an embroidered court uniform knee breeches"
+    },
+    {
+      "type": "chunk",
+      "root": "shoes",
+      "dep": "conj",
+      "id": "shoes"
+    },
+    {
+      "type": "chunk",
+      "root": "stars",
+      "dep": "dobj",
+      "id": "stars"
+    },
+    {
+      "type": "chunk",
+      "root": "breast",
+      "dep": "pobj",
+      "id": "his breast"
+    },
+    {
+      "type": "chunk",
+      "root": "expression",
+      "dep": "conj",
+      "id": "a serene expression"
+    },
+    {
+      "type": "chunk",
+      "root": "face",
+      "dep": "pobj",
+      "id": "his flat face"
+    },
+    {
+      "type": "chunk",
+      "root": "french",
+      "dep": "pobj",
+      "id": "that refined french"
+    },
+    {
+      "type": "chunk",
+      "root": "which",
+      "dep": "pobj",
+      "id": "which"
+    },
+    {
+      "type": "chunk",
+      "root": "grandfathers",
+      "dep": "nsubj",
+      "id": "our grandfathers"
+    },
+    {
+      "type": "chunk",
+      "root": "intonation",
+      "dep": "pobj",
+      "id": "the gentle patronizing intonation"
+    },
+    {
+      "type": "chunk",
+      "root": "society",
+      "dep": "pobj",
+      "id": "society"
+    },
+    {
+      "type": "chunk",
+      "root": "court",
+      "dep": "pobj",
+      "id": "court"
+    },
+    {
+      "type": "chunk",
+      "root": "hand",
+      "dep": "dobj",
+      "id": "her hand"
+    },
+    {
+      "type": "chunk",
+      "root": "her",
+      "dep": "pobj",
+      "id": "her"
+    },
+    {
+      "type": "chunk",
+      "root": "head",
+      "dep": "dobj",
+      "id": "his bald scented and shining head"
+    },
+    {
+      "type": "chunk",
+      "root": "himself",
+      "dep": "dobj",
+      "id": "himself"
+    },
+    {
+      "type": "chunk",
+      "root": "sofa",
+      "dep": "pobj",
+      "id": "the sofa"
+    },
+    {
+      "type": "chunk",
+      "root": "friend",
+      "dep": "pobj",
+      "id": "all dear friend"
+    },
+    {
+      "type": "chunk",
+      "root": "mind",
+      "dep": "dobj",
+      "id": "your friend\u2019s mind"
+    },
+    {
+      "type": "chunk",
+      "root": "rest",
+      "dep": "pobj",
+      "id": "rest"
+    },
+    {
+      "type": "chunk",
+      "root": "tone",
+      "dep": "dobj",
+      "id": "his tone"
+    },
+    {
+      "type": "chunk",
+      "root": "sympathy",
+      "dep": "pobj",
+      "id": "the politeness and affected sympathy"
+    },
+    {
+      "type": "chunk",
+      "root": "indifference",
+      "dep": "pobj",
+      "id": "which indifference"
+    },
+    {
+      "type": "chunk",
+      "root": "irony",
+      "dep": "nsubjpass",
+      "id": "even irony"
+    },
+    {
+      "type": "chunk",
+      "root": "times",
+      "dep": "pobj",
+      "id": "times"
+    },
+    {
+      "type": "chunk",
+      "root": "these",
+      "dep": "pobj",
+      "id": "these"
+    },
+    {
+      "type": "chunk",
+      "root": "feeling",
+      "dep": "dobj",
+      "id": "any feeling"
+    },
+    {
+      "type": "chunk",
+      "root": "ambassador",
+      "dep": "pobj",
+      "id": "the english ambassador"
+    },
+    {
+      "type": "chunk",
+      "root": "appearance",
+      "dep": "dobj",
+      "id": "an appearance"
+    },
+    {
+      "type": "chunk",
+      "root": "daughter",
+      "dep": "nsubj",
+      "id": "my daughter"
+    },
+    {
+      "type": "chunk",
+      "root": "festivities",
+      "dep": "nsubj",
+      "id": "all these festivities"
+    },
+    {
+      "type": "chunk",
+      "root": "fireworks",
+      "dep": "conj",
+      "id": "fireworks"
+    },
+    {
+      "id": "ebook you it you you you"
+    },
+    {
+      "id": "war use anyone states world cost restrictions it it terms license ebook states laws country war maude 2600 gutenberg war book"
+    },
+    {
+      "id": "genoa i you this you i he i you you"
+    },
+    {
+      "id": "buonapartes you me war infamies antichrist nothing you yourself"
+    },
+    {
+      "id": "you i i it speaker sch\u00e9rer she who p\u00e1vlovna she she word you prospect i sch\u00e9rer he he grandfathers who he you he irony one one one you i fete i prince daughter me i fete i festivities"
+    },
+    {
+      "id": "you news july honor f\u00ebdorovna words kur\u00e1gin man rank cough days grippe petersburg elite invitations exception french footman nothing count evening invalid you 7 prince least reception breeches stars breast face french which intonation man importance society court p\u00e1vlovna hand her head himself sofa friend me mind rest tone sympathy indifference times these feeling ambassador appearance me"
+    }
+  ],
+  "links": [
+    {
+      "relation": "book",
+      "sentence": "\ufeffthe project gutenberg ebook of war and peace this ebook is for the use of anyone anywhere in the united states and most other parts of the world at no cost and with almost no restrictions whatsoever you may copy it give it away or reuse it under the terms of the project gutenberg license included with this ebook or online at if you are not located in the united states you will have to check the laws of the country where you are located before using this ebook title war and peace author graf leo tolstoy translator aylmer maude louise maude release date april 1 2001 ebook 2600 most recently updated june 14 2022 language english credits an anonymous volunteer and david widger start of the project gutenberg ebook war and peace war and peace by leo tolstoytolstoi contents book one 1805 chapter i chapter ii chapter iii chapter iv chapter v chapter vi chapter vii chapter viii chapter ix chapter x chapter xi chapter xii chapter xiii chapter xiv chapter xv chapter xvi chapter xvii chapter xviii chapter xix chapter xx chapter xxi chapter xxii chapter xxiii chapter xxiv chapter xxv chapter xxvi chapter xxvii chapter xxviii book two 1805 chapter i chapter ii chapter iii chapter iv chapter v chapter vi chapter vii chapter viii chapter ix chapter x chapter xi chapter xii chapter xiii chapter xiv chapter xv chapter xvi chapter xvii chapter xviii chapter xix chapter xx chapter xxi book three 1805 chapter i chapter ii chapter iii chapter iv chapter v chapter vi chapter vii chapter viii chapter ix chapter x chapter xi chapter xii chapter xiii chapter xiv chapter xv chapter xvi chapter xvii chapter xviii chapter xix book four 1806 chapter i chapter ii chapter iii chapter iv chapter v chapter vi chapter vii chapter viii chapter ix chapter x chapter xi chapter xii chapter xiii chapter xiv chapter xv chapter xvi book five 1806 07 chapter i chapter ii chapter iii chapter iv chapter v chapter vi chapter vii chapter viii chapter ix chapter x chapter xi chapter xii chapter xiii chapter xiv chapter xv chapter xvi chapter xvii chapter xviii chapter xix chapter xx chapter xxi chapter xxii book six 1808 10 chapter i chapter ii chapter iii chapter iv chapter v chapter vi chapter vii chapter viii chapter ix chapter x chapter xi chapter xii chapter xiii chapter xiv chapter xv chapter xvi chapter xvii chapter xviii chapter xix chapter xx chapter xxi chapter xxii chapter xxiii chapter xxiv chapter xxv chapter xxvi book seven 1810 11 chapter i chapter ii chapter iii chapter iv chapter v chapter vi chapter vii chapter viii chapter ix chapter x chapter xi chapter xii chapter xiii book eight 1811 12 chapter",
+      "source": "ebook you it you you you",
+      "target": "war use anyone states world cost restrictions it it terms license ebook states laws country war maude 2600 gutenberg war book"
+    },
+    {
+      "relation": "call",
+      "sentence": "so genoa and lucca are now just family estates of the buonapartes but i warn you if you don\u2019t tell me that this means war if you still try to defend the infamies and horrors perpetrated by that antichrist\u2014i really believe he is antichrist\u2014i will have nothing more to do with you and you are no longer my friend no longer my \u2018faithful slave\u2019 as you call yourself",
+      "source": "genoa i you this you i he i you you",
+      "target": "buonapartes you me war infamies antichrist nothing you yourself"
+    },
+    {
+      "relation": "become",
+      "sentence": "but how do you do i see i have frightened you\u2014sit down and tell me all the news\u201d it was in july 1805 and the speaker was the wellknown anna p\u00e1vlovna sch\u00e9rer maid of honor and favorite of the empress m\u00e1rya f\u00ebdorovna with these words she greeted prince vas\u00edli kur\u00e1gin a man of high rank and importance who was the first to arrive at her reception anna p\u00e1vlovna had had a cough for some days she was as she said suffering from la grippe grippe being then a new word in st petersburg used only by the elite all her invitations without exception written in french and delivered by a scarletliveried footman that morning ran as follows \u201cif you have nothing better to do count or prince and if the prospect of spending an evening with a poor invalid is not too terrible i shall be very charmed to see you tonight between 7 and 10\u2014annette sch\u00e9rer\u201d \u201cheavens what a virulent attack\u201d replied the prince not in the least disconcerted by this reception he had just entered wearing an embroidered court uniform knee breeches and shoes and had stars on his breast and a serene expression on his flat face he spoke in that refined french in which our grandfathers not only spoke but thought and with the gentle patronizing intonation natural to a man of importance who had grown old in society and at court he went up to anna p\u00e1vlovna kissed her hand presenting to her his bald scented and shining head and complacently seated himself on the sofa \u201cfirst of all dear friend tell me how you are set your friend\u2019s mind at rest\u201d said he without altering his tone beneath the politeness and affected sympathy of which indifference and even irony could be discerned \u201ccan one be well while suffering morally can one be calm in times like these if one has any feeling\u201d said anna p\u00e1vlovna \u201cyou are staying the whole evening i hope\u201d \u201cand the fete at the english ambassador\u2019s today is wednesday i must put in an appearance there\u201d said the prince \u201cmy daughter is coming for me to take me there\u201d \u201ci thought today\u2019s fete had been canceled i confess all these festivities and fireworks are becoming wearisome",
+      "source": "you i i it speaker sch\u00e9rer she who p\u00e1vlovna she she word you prospect i sch\u00e9rer he he grandfathers who he you he irony one one one you i fete i prince daughter me i fete i festivities",
+      "target": "you news july honor f\u00ebdorovna words kur\u00e1gin man rank cough days grippe petersburg elite invitations exception french footman nothing count evening invalid you 7 prince least reception breeches stars breast face french which intonation man importance society court p\u00e1vlovna hand her head himself sofa friend me mind rest tone sympathy indifference times these feeling ambassador appearance me"
+    }
+  ]
+}

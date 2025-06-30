@@ -1,0 +1,175 @@
+{
+  "original_text": "\n    Apple Inc. is an American multinational technology company headquartered in Cupertino, California.\n    It was founded by Steve Jobs, Steve Wozniak, and Ronald Wayne in 1976. Apple is known for\n    its innovative products like the iPhone, iPad, and Mac computers. The company's CEO is Tim Cook.\n    Apple has over 147,000 employees and operates in more than 25 countries.\n    ",
+  "cleaned_text": "apple inc is an american multinational technology company headquartered in cupertino california it was founded by steve jobs steve wozniak and ronald wayne in 1976 apple is known for its innovative products like the iphone ipad and mac computers the company's ceo is tim cook apple has over 147000 employees and operates in more than 25 countries",
+  "text": "apple inc is an american multinational technology company headquartered in cupertino california it was founded by steve jobs steve wozniak and ronald wayne in 1976 apple is known for its innovative products like the iphone ipad and mac computers the company's ceo is tim cook apple has over 147000 employees and operates in more than 25 countries",
+  "entities": [
+    {
+      "text": "apple inc",
+      "type": "ORG",
+      "start": 0,
+      "end": 9
+    },
+    {
+      "text": "american",
+      "type": "NORP",
+      "start": 16,
+      "end": 24
+    },
+    {
+      "text": "california",
+      "type": "GPE",
+      "start": 85,
+      "end": 95
+    },
+    {
+      "text": "steve jobs",
+      "type": "PERSON",
+      "start": 114,
+      "end": 124
+    },
+    {
+      "text": "steve wozniak",
+      "type": "PERSON",
+      "start": 125,
+      "end": 138
+    },
+    {
+      "text": "ronald wayne",
+      "type": "PERSON",
+      "start": 143,
+      "end": 155
+    },
+    {
+      "text": "1976",
+      "type": "DATE",
+      "start": 159,
+      "end": 163
+    },
+    {
+      "text": "tim cook",
+      "type": "PERSON",
+      "start": 267,
+      "end": 275
+    },
+    {
+      "text": "147000",
+      "type": "CARDINAL",
+      "start": 291,
+      "end": 297
+    },
+    {
+      "text": "more than 25",
+      "type": "CARDINAL",
+      "start": 324,
+      "end": 336
+    }
+  ],
+  "noun_chunks": [
+    {
+      "text": "apple inc",
+      "root_text": "inc",
+      "root_dep": "nsubj",
+      "start": 0,
+      "end": 9
+    },
+    {
+      "text": "an american multinational technology company",
+      "root_text": "company",
+      "root_dep": "attr",
+      "start": 13,
+      "end": 57
+    },
+    {
+      "text": "cupertino california",
+      "root_text": "california",
+      "root_dep": "pobj",
+      "start": 75,
+      "end": 95
+    },
+    {
+      "text": "it",
+      "root_text": "it",
+      "root_dep": "nsubjpass",
+      "start": 96,
+      "end": 98
+    },
+    {
+      "text": "steve jobs steve wozniak",
+      "root_text": "wozniak",
+      "root_dep": "pobj",
+      "start": 114,
+      "end": 138
+    },
+    {
+      "text": "ronald wayne",
+      "root_text": "wayne",
+      "root_dep": "conj",
+      "start": 143,
+      "end": 155
+    },
+    {
+      "text": "1976 apple",
+      "root_text": "apple",
+      "root_dep": "pobj",
+      "start": 159,
+      "end": 169
+    },
+    {
+      "text": "its innovative products",
+      "root_text": "products",
+      "root_dep": "pobj",
+      "start": 183,
+      "end": 206
+    },
+    {
+      "text": "the iphone ipad",
+      "root_text": "ipad",
+      "root_dep": "pobj",
+      "start": 212,
+      "end": 227
+    },
+    {
+      "text": "mac computers",
+      "root_text": "computers",
+      "root_dep": "conj",
+      "start": 232,
+      "end": 245
+    },
+    {
+      "text": "the company's ceo",
+      "root_text": "ceo",
+      "root_dep": "pobj",
+      "start": 246,
+      "end": 263
+    },
+    {
+      "text": "tim cook apple",
+      "root_text": "apple",
+      "root_dep": "nsubj",
+      "start": 267,
+      "end": 281
+    },
+    {
+      "text": "over 147000 employees",
+      "root_text": "employees",
+      "root_dep": "dobj",
+      "start": 286,
+      "end": 307
+    },
+    {
+      "text": "more than 25 countries",
+      "root_text": "countries",
+      "root_dep": "pobj",
+      "start": 324,
+      "end": 346
+    }
+  ],
+  "relations": [
+    {
+      "subject": "inc it apple",
+      "relation": "operate",
+      "object": "california wozniak apple products ipad ceo employees countries",
+      "sentence": "apple inc is an american multinational technology company headquartered in cupertino california it was founded by steve jobs steve wozniak and ronald wayne in 1976 apple is known for its innovative products like the iphone ipad and mac computers the company's ceo is tim cook apple has over 147000 employees and operates in more than 25 countries"
+    }
+  ]
+}

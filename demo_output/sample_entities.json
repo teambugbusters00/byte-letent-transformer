@@ -1,0 +1,62 @@
+[
+  {
+    "text": "apple inc",
+    "type": "ORG",
+    "start": 0,
+    "end": 9
+  },
+  {
+    "text": "american",
+    "type": "NORP",
+    "start": 16,
+    "end": 24
+  },
+  {
+    "text": "california",
+    "type": "GPE",
+    "start": 85,
+    "end": 95
+  },
+  {
+    "text": "steve jobs",
+    "type": "PERSON",
+    "start": 114,
+    "end": 124
+  },
+  {
+    "text": "steve wozniak",
+    "type": "PERSON",
+    "start": 125,
+    "end": 138
+  },
+  {
+    "text": "ronald wayne",
+    "type": "PERSON",
+    "start": 143,
+    "end": 155
+  },
+  {
+    "text": "1976",
+    "type": "DATE",
+    "start": 159,
+    "end": 163
+  },
+  {
+    "text": "tim cook",
+    "type": "PERSON",
+    "start": 267,
+    "end": 275
+  },
+  {
+    "text": "147000",
+    "type": "CARDINAL",
+    "start": 291,
+    "end": 297
+  },
+  {
+    "text": "more than 25",
+    "type": "CARDINAL",
+    "start": 324,
+    "end": 336
+  }
+]
