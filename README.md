@@ -269,7 +269,7 @@ bash dev/lint.sh
 
 The project includes a built-in visualization server to easily view generated plots and interactive visualizations.
 
-### Running the Visualization Server
+### Running Locally
 
 1. Install Flask (included in requirements.txt)
 2. Run the server:
@@ -279,6 +279,40 @@ python render_server.py
 ```
 
 3. Open http://localhost:5000 in your browser
+
+### Deploying on Render
+
+Render can deploy both frontend and backend in a single deployment. The visualization server is production-ready for Render.
+
+#### Render Deployment Steps
+
+1. **Connect Repository**: Link your GitHub repository to Render
+2. **Create Web Service**:
+   - Service Type: Web Service
+   - Build Command: `pip install -r requirements.txt`
+   - Start Command: `python render_server.py`
+3. **Environment Variables**:
+   - `FLASK_ENV`: `production`
+   - `FLASK_DEBUG`: `false`
+   - `PORT`: (automatically set by Render)
+
+#### Using render.yaml (Alternative)
+
+If you prefer using Render's blueprint, the `render.yaml` file is configured for automatic deployment:
+
+```yaml
+services:
+  - type: web
+    name: blt-visualization-server
+    runtime: python3
+    buildCommand: pip install -r requirements.txt
+    startCommand: python render_server.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_DEBUG
+        value: false
+```
 
 ### Available Visualizations
 
